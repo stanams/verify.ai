@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verify.ai - Counter Deep Fakes</title>
+    <title>Verify.ai - Counter Deep Fakes with Joy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,11 +11,25 @@
             padding: 0;
             background-color: #f0f0f0;
         }
-        .header {
-            background-color: #007bff;
+        .full-page-header {
+            background-color: #4CAF50; /* Lighter, joyful green */
             color: #ffffff;
-            padding: 20px;
-            text-align: center;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px; /* Aligns tagline to the left */
+            background-image: linear-gradient(to right, #4CAF50 , #81C784); /* Gradient for a more dynamic feel */
+        }
+        .tagline {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .description {
+            font-size: 20px;
+            margin-top: 20px;
+            width: 50%; /* Ensures the text is not too wide */
         }
         .content {
             padding: 20px;
@@ -47,28 +61,13 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Welcome to Verify.ai</h1>
-        <p>Protect Your Media with Advanced Authentication Technology</p>
+    <div class="full-page-header">
+        <h1 class="tagline">Bringing Authenticity to Digital Media</h1>
+        <p class="description">Dive into the future with Verify.ai, where every piece of media is safeguarded with our AI-powered technology. Embrace the joy of trusted content today.</p>
     </div>
 
     <div class="content">
-        <div class="section">
-            <h2>About Verify.ai</h2>
-            <p>Verify.ai offers a cutting-edge solution to counter deep fakes through the use of steganography and perceptual hashes. Designed for public figures frequently targeted by fake media portrayals, our service ensures the authenticity of media content against scams or discrediting attempts.</p>
-        </div>
-
-        <div class="section">
-            <h2>How It Works</h2>
-            <h3>Media Signing by Public Figures</h3>
-            <p>Public figures can authenticate their media (videos, sounds, images) through Verify.ai. This involves processing the content using perceptual hashes to maintain integrity after compression, followed by digital signing with asymmetric cryptography. The signed hashes and the public figure's public key are then embedded into the media file using steganography, preserving the original perceptibility.</p>
-            <h3>Content Sharing and Verification</h3>
-            <p>Once embedded, the content can be shared across platforms. End-users can verify authenticity by extracting and validating the embedded perceptual hashes and public key against a dedicated certificate authority for public figures. A matching hash confirms the media's authenticity.</p>
-        </div>
-
-        <div class="cta">
-            <a href="#contact" class="cta-button">Get Started with Verify.ai</a>
-        </div>
+        <!-- Additional sections go here -->
     </div>
 </body>
 </html>
